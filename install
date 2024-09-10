@@ -3,10 +3,10 @@
 set -euo pipefail
 
 function run() {
-  VERSION="${AVIARY_VERSION:-1.5.0}"
+  VERSION="${AVIARY_VERSION:-1.5.1}"
   INSTALL_PATH=/var/lib
   AV_PATH="$INSTALL_PATH/aviary/av"
-  RELEASE_URL=https://github.com/frameable/aviary.sh/archive/refs/tags/v${VERSION}.tar.gz
+  RELEASE_URL=https://github.com/gastrodon/aviary.sh/archive/refs/tags/v${VERSION}.tar.gz
   INVENTORY_GIT_URL=${1:-""}
   CONFIG_FILE="$INSTALL_PATH/aviary/config"
   NO_CRON="${AVIARY_NO_CRON:-false}"
